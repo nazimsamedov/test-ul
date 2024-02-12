@@ -96,7 +96,7 @@
         const li = document.createElement('li');
         li.setAttribute("id", obj.id);
         li.classList.add('list-group-item', 'border-0');
-        li.textContent = obj.name;
+        li.textContent = `${obj.name} ${obj.price}`;
         ul.append(li);
         ul.classList.add('list-group', 'border-bottom', 'border-left');
       }
