@@ -92,6 +92,7 @@
   function createDir(ul, headVal) {
     servicesArr.sort((a, b) => a.sorthead > b.sorthead ? 1 : -1);
     servicesArr.forEach((obj) => {
+      if (obj.price == 0) obj.price = '';
       if (obj.head == headVal) {
         const li = document.createElement('li');
         li.setAttribute("id", obj.id);
